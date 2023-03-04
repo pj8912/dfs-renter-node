@@ -1,0 +1,82 @@
+{% extends 'wrapper.html' %}
+{% block title %}Configuration{% endblock %}
+
+{% block content %}
+
+
+<div class="container mt-5">
+
+    <h1>Configuration</h1>
+
+    <div class="mt-5">
+
+        <div class="card card-body col-md-4">
+            <h5>
+               Node Identity            
+            </h5>
+            <p>js048h3k34634n9</p>
+        </div>
+    </div>
+
+   <!-- <hr> -->
+
+    <div class="mt-4">
+        <div class="card card-body col-md-4">
+
+            <h4>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-wallet2" viewBox="0 0 16 16">
+                    <path d="M12.136.326A1.5 1.5 0 0 1 14 1.78V3h.5A1.5 1.5 0 0 1 16 4.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 13.5v-9a1.5 1.5 0 0 1 1.432-1.499L12.136.326zM5.562 3H13V1.78a.5.5 0 0 0-.621-.484L5.562 3zM1.5 4a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z"/>
+                </svg>
+                Add Wallet Address
+            </h4>
+            
+            <!-- <form action="/walletconfig" method="post"> -->
+                <div class="mb-2">
+                    <input type="text" placeholder="Wallet Address" name="" id="" class="form-control">
+                </div>
+                <div class="mb-2 text-center">
+                    <button type="submit" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
+                </div>
+            <!-- </form> -->
+
+            
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="staticBackdropLabel">Initial Configuraton</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="mb-2">
+                            <input type="text" placeholder="Add Wallet Address eg: 0x98860e58D48b6fbf7ffaFd5B446b3781B6aeDA79" name="" id="" class="form-control">
+                        </div>
+                        <div class="mb-2">
+                            <input type="text" placeholder="Gas: 0.02ETH" name="" class="form-control">
+                        </div>
+                        <div class="mb-2 text-center">
+                            <button type="submit" class="btn btn-primary"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                    <!-- <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+
+        </div>
+
+   
+    </div>
+            
+
+
+
+</div>
+
+{% endblock %}
